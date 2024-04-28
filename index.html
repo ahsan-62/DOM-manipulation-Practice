@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Practice Task</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div
+          class="text-center w-1/2 mx-auto mt-10 text-white bg-blue-500 rounded p-4 shadow mb-10"
+        >
+          <h3 class="text-3xl">Price</h3>
+          <p class="text-2xl">Tk: <span id="price">120</span></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="flex items-center justify-center gap-4">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            id="apply"
+          >
+            Apply
+          </button>
+          <h3 class="text-2xl text-red-300">
+            Please Pay: <span id="pay">00</span> Tk
+          </h3>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="flex w-1/2 mx-auto items-center justify-center gap-4 mt-9 bg-amber-900 p-10 rounded-xl"
+        >
+          <input
+            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+            type="text"
+            name=""
+            id="discount-field"
+            placeholder="coupon code"
+          />
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            id="discount-btn"
+          >
+            Apply
+          </button>
+        </div>
+
+        <h3 class="text-2xl text-red-600 text-center mt-6">
+          Please pay:<span id="discount">00</span> Tk
+        </h3>
+      </section>
+    </main>
+
+    <script src="js/discount.js"></script>
+    <script src="js/dis.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl text-center">Editor app</h1>
+
+    <section>
+      <div class="flex gap-8 m-8 text-white">
+        <button class="bg-yellow-900 p-2 rounded w-12" id="bold" type="button">
+          B
+        </button>
+        <button
+          class="bg-yellow-900 p-2 rounded w-12"
+          id="italic"
+          type="button"
+        >
+          i
+        </button>
+        <button
+          class="bg-yellow-900 p-2 rounded w-12"
+          id="underline"
+          type="button"
+        >
+          U
+        </button>
+
+        <input type="color" id="colorPicker" />
+      </div>
+      <div class="w-1/2 mx-auto">
+        <textarea
+          class="bg-slate-900 text-white p-4 rounded w-full h-96"
+          name=""
+          id="ahsan"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+    </section>
+
+    <script src="js/editor.js"></script>
+  </body>
+</html>
